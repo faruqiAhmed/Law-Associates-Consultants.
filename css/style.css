@@ -10,7 +10,7 @@ Global css
 :root{
 	--main-color: #7857fe;
 	--color-1: #e91e63;
-	--color-2: #f5ae10;
+	--color-2: #dbcaa4;
 	--color-3: #09d69c;
 	--bg-dark: #2b2c2f;
 	--main-to-dark-color: var(--main-color);
@@ -226,14 +226,14 @@ Navbar
 	text-transform: capitalize;
 }
 .navbar .nav-item{
-	margin-left: 40px;
+	margin-left: 25px;
 }
 .navbar .nav-item .nav-link{
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 400;
 	text-transform: capitalize;
-	padding: 5px 0 ;
+	padding: 5px 0;
 	position: relative;
 }
 .navbar .nav-item .nav-link::before{
@@ -388,14 +388,18 @@ height: 100%;
 border: 0;
 }
 .video{
+   background-color: var(--black-0000);
    margin: 10px;
 	padding: 30px;
 
 }
-.iframe{
+/* .iframe{
 	width: fit-content;
 	height: 500%;
-}
+	border: 1px solid rgb(255,255,255, 0.2);
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0);
+
+} */
 
 
 
@@ -629,7 +633,8 @@ font-size: 16px;
 	box-shadow: var(--shadow-black-100);
 	border-radius: 10px;
 	text-align: center;
-	height: 250px;
+	height: 260px;
+	
 }
 .testimonial-item .img-box{
 	height: 100px;
@@ -661,7 +666,7 @@ font-size: 16px;
 
 }
 .testimonial-item p{
-	font-size: 16px;
+	font-size: 14px;
 	margin: 0 0 20px;
 	color: var(--black-400);
 	line-height: 26px;
@@ -727,7 +732,7 @@ text-align: center;
 Career 
 ----------*/
 .career{
-	background-color: var(--black-100);
+	background-color: var(--black-000);
 
 }
 
@@ -960,7 +965,7 @@ im
 /* -------Footer 
 ---- */
 .footer{
-	background-color: var(--main-color);
+	background-color: #515E63;
 	padding: 50px 0 0;
 }
 .footer-col h3{
@@ -976,6 +981,7 @@ im
 	color: rgba(255, 255, 255, 0.9) ;
 	line-height: 26px;
 	margin: 0;
+	text-align: justify;
 
 }
 .footer-col ul{
@@ -1062,17 +1068,23 @@ im
 	}
 	.how-it-works-item.line-right::before{
 		content: none;
+		padding: 10px;
 	}
 	.how-it-works-item{
 		box-shadow: var(--shadow-black-100);
+		padding: 30px;
 		border-radius: 10px;
 	}
 .footer-col{
 	margin-bottom: 30px;
 }
+
+
 .faq .accordion-header h3{
 	font-size: 12px;
 }
+
+
 
 }
 @media(max-width: 767px){
@@ -1092,6 +1104,8 @@ im
 .fun-facts .section-title h2{
 	text-align: center;
 }
+
+
 
 }
 
