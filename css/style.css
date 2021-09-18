@@ -209,7 +209,7 @@ Navbar
 	background-color: transparent;
 	padding: 20px 0;
 	transition: all 0.5s ease;
-	background-color: #515E63; /*var(--main-color)*/;
+	/* background-color: #515E63; var(--main-color); */
 }
 .navbar.navbar-shrink{
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -258,11 +258,15 @@ Navbar
 .home{
 	min-height: 100vh;
 	padding: 150px 0;
-	background-color: #515E63;
-	border-radius: 0 0 200px 0;
+	background-color:#ecfff0;
+
+	/* border-radius: 0 0 200px 0; */
 	position: relative;
 	z-index: 1;
 	overflow-x: hidden;
+	/* background-image: linear-gradient(to top right,#450b7c,#563cc9,#49e9fb); */
+	background-image: url(/img/bg-header.svg);
+	
 
 }
 .home-text h1{
@@ -303,8 +307,8 @@ Navbar
 .home-img  img{
 	max-width:  600px;
 	width: 120%;
-	/*box-shadow: var(--shadow-black-100);*/
-	/*border-radius: 32px;*/
+	/* box-shadow: var(--shadow-black-100);*/
+	/*border-radius: 32px; */
 	animation: bounceTop_01 3s ease infinite;
 }
 .home-img{
@@ -315,7 +319,7 @@ position: absolute;
 z-index: 1;
 height: 400px;
 width: 400px;
-border: 1px solid rgb(255,255,255, 0.2);
+border: 1px solid rgb(70 74 78 / 80%);
 border-radius: 50%;
 top: 50%;
 left: 50%;
@@ -327,7 +331,7 @@ transform: translate(-50%, -50%);
 	position: absolute;
 	height: 60px;
 	width: 60px;
-	background-color: rgb(255,255, 255, 0.4);
+	background-color: rgb(64 100 136 / 80%);
 	border-radius: 50%;
 	left:30px;
 	top: 30px;
@@ -391,8 +395,12 @@ border: 0;
    background-color: var(--black-0000);
    margin: 10px;
 	padding: 30px;
+   /* box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+   border-radius: 40px;
+   width: 1000px; */
 
-}
+} 
+
 /* .iframe{
 	width: fit-content;
 	height: 500%;
@@ -525,6 +533,7 @@ font-size: 16px;
 .app-download{
 	/* background-image: url('../img/law.jpeg'); */
 	background-color: var(--black-100);
+	
 	background-position: center top;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -545,6 +554,7 @@ font-size: 16px;
 	height: 100%;
 	z-index: -1;
 	background-color: var(--main-to-dark-color);
+	
 	opacity:0.8;
 
 }
@@ -745,6 +755,10 @@ Career
 Faq Section 
 
 ------------*/
+.faq{
+	background-color: #e4faed;
+}
+
 
 .faq .accordion-item:not(:last-child){
 	margin-bottom: 20px;
@@ -779,7 +793,8 @@ Faq Section
 	transform: all 0.5s ease;
 }
 .faq .accordion-header:not(.collapsed){
-	background-color: var(--main-color);
+	/* background-color: var(--main-color); */
+	background-color: #fe7f88;
 	box-shadow: none;
 }
 .faq .accordion-header:not(.collapsed)::before{
@@ -803,9 +818,10 @@ Faq Section
 }
 .faq .accordion-body{
 	padding: 20px 30px;
-	background-color: var(--black-100);
+	background-color: #fff;
 	border-radius: 30px;
-	    box-shadow: 6px 4px 6px #4689a51f;
+	/* box-shadow: 6px 4px 6px #4689a51f; */
+	box-shadow: 0 20px 40px 0 rgb(116 165 202 / 15%);
 
 }
 .faq .accordion-body  span{
@@ -898,7 +914,8 @@ im
 
 
 .contact{
-	background-color: var(--black-100);
+	/* background-color: var(--black-100); */
+	background-image: linear-gradient(to top, #fefefe, #ecfff0);
 
 }
 
@@ -951,7 +968,7 @@ im
  .contact-form .form-control{
  	height: 52px;
  	border: 1px solid transparent;
- 	box-shadow: var(--shadow-black-900);
+ 	box-shadow: var(--shadow-black-100);
  	border-radius: 30px;
  	padding: 0 24px;
  	color: var(--black-900);
@@ -972,7 +989,10 @@ im
 /* -------Footer 
 ---- */
 .footer{
-	background-color: #515E63;
+	background-color: #34495e;
+	background: #222236 !important ;
+	/* background-image: url(/img/bg-header2\ .svg);
+	 */
 	padding: 50px 0 0;
 }
 .footer-col h3{
