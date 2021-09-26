@@ -162,6 +162,7 @@ Navbar
       box-shadow: 0 0 0 0 rgb(255, 255, 255,0);
 	}
 }
+
 @keyframes move{
 	0%{
 		transform: translate(-15px ,0px);
